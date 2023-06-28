@@ -21,3 +21,8 @@ NoSQL desde cero: Aprende MongoDB en 10 minutos:
     
 [![ MongoDB Crash Course - Schemas and Relationships ](https://img.youtube.com/vi/DdvhZj7SsEM/0.jpg)](https://www.youtube.com/watch?v=DdvhZj7SsEM) 
 
+---
+ Mongoose Crash Course - Beginner Through Advanced:
+    
+[![ MongoDB Crash Course - Schemas and Relationships ](https://img.youtube.com/vi/DZBGEVgL2eE/0.jpg)](https://www.youtube.com/watch?v=DZBGEVgL2eE) 
+
