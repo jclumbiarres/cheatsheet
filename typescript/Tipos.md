@@ -104,3 +104,49 @@ function obtenerNombre(): string | null {
 En el ejemplo, la función obtenerNombre devuelve un valor de tipo string o null. El uso del tipo null puede ayudar a evitar errores en tiempo de ejecución al indicar explícitamente que una variable o propiedad puede no tener un valor asignado.
 
 ### Undefined
+
+En TypeScript, el tipo undefined se refiere a un valor que no está definido o no está asignado. Se utiliza para indicar que una variable o propiedad no tiene un valor asignado intencionalmente o que su valor es desconocido. 
+Ejemplo:
+```ts
+let valor: string | undefined;
+let persona: { nombre: string, edad?: number } = { nombre: "Juan" };
+```
+En este ejemplo, la variable valor y la propiedad edad de la variable persona no tienen un valor asignado intencionalmente, por lo que su valor es undefined. El tipo undefined se puede combinar con otros tipos utilizando la sintaxis de unión (|) para indicar que una variable o propiedad puede tener un valor de ese tipo o undefined.
+Ejemplo:
+```ts
+let valor: string | undefined = "hola";
+valor = undefined;
+
+function obtenerEdad(): number | undefined {
+  return undefined;
+}
+```
+### Symbol
+
+En TypeScript, el tipo symbol se refiere a un valor único e inmutable que se utiliza como clave de propiedad en objetos. Los símbolos se crean utilizando la función Symbol() y se pueden utilizar para crear propiedades de objeto que no se pueden acceder de otra manera.
+```ts
+let simbolo1 = Symbol();
+let simbolo2 = Symbol("descripcion");
+
+let objeto = {
+  [simbolo1]: "valor1",
+  [simbolo2]: "valor2"
+};
+
+console.log(objeto[simbolo1]); // "valor1"
+console.log(objeto[simbolo2]); // "valor2"
+```
+En este ejemplo, se crean dos símbolos utilizando la función Symbol(). Luego, se utiliza la sintaxis de corchetes para crear propiedades de objeto utilizando los símbolos como claves. Los símbolos se pueden utilizar para crear propiedades de objeto que no se pueden acceder de otra manera, lo que los hace útiles para crear propiedades privadas o protegidas. El tipo symbol se utiliza principalmente en el contexto de objetos y no se utiliza comúnmente en otros tipos de datos.
+
+### Void
+
+El tipo void se refiere a la ausencia de un valor. Se utiliza para indicar que una función no devuelve ningún valor o que una variable no tiene un valor asignado.
+Ejemplo:
+```ts
+function imprimirMensaje(): void {
+  console.log("Hola");
+}
+
+let resultado: void = undefined;
+```
+En este ejemplo, la función imprimirMensaje no devuelve ningún valor, por lo que su tipo de retorno es void. La variable resultado se ha asignado explícitamente como undefined, que es el valor que se utiliza para indicar que una variable no tiene un valor asignado. El tipo void se utiliza principalmente en el contexto de funciones y no se utiliza comúnmente en otros tipos de datos.
